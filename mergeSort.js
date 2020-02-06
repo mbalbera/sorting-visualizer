@@ -10,7 +10,9 @@ const merge = (lt, rt) => {
             final.push(lt.shift())
         }
     }
-    return final.push(lt).push(rt).flat()
+    final.push(lt)
+    final.push(rt)
+    return final.flat()
 }
 
 const mergeSort = (arr) => {
