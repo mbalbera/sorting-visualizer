@@ -1,5 +1,19 @@
 //merge sort
-export const mergeSort = (arr) => {
+
+const merge = (lt, rt) => {
+    let final = []
+    while(lt.length > 0 || rt.length > 0){
+        if(lt[0] >= rt[0]){
+            final.push(rt.shift())
+        } 
+        else{
+            final.push(lt.shift())
+        }
+    }
+    return final.push(lt).push(rt).flat()
+}
+
+const mergeSort = (arr) => {
     if (arr.length <= 1){
         return arr
     }
@@ -9,4 +23,3 @@ export const mergeSort = (arr) => {
     return merge(mergeSort(left),mergeSort(right))
 }
 
-const 
