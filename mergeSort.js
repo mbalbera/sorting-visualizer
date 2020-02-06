@@ -1,7 +1,7 @@
 //merge sort
 
 const merge = (lt, rt) => {
-    let final = []
+    const final = []
     while(lt.length > 0 || rt.length > 0){
         if(lt[0] >= rt[0]){
             final.push(rt.shift())
