@@ -1,4 +1,4 @@
-// this will be a bubble sort
+//bubble sort
 export const bubble = (arr) => {
     let swapped = true
     while (swapped){
