@@ -1,10 +1,15 @@
-const randomizer = (num = 10) =>{
-    const arr = []
-    while (arr.length <= num){
+let array = []
+let number = 10
+const randomizeButton = document.querySelector('#random');
+const startButton = document.querySelector('#start');
+
+const randomizer = () =>{
+    
+    while (array.length <= number){
         let num = Math.random()
-        arr.push(Math.floor(100 * num))
+        array.push(Math.floor(100 * num))
     }
-    return arr
+    return array
 }
 
 //bubble sort
