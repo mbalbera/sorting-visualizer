@@ -8,7 +8,7 @@ const randomizer = (num = 10) =>{
 }
 
 //bubble sort
-const bubble = (arr) => {
+const bubbleSort = (arr) => {
     let swapped = true
     while (swapped) {
         swapped = false
@@ -52,7 +52,7 @@ const mergeSort = (arr) => {
 }
 
 //quick sort
-export const quick = (arr) => {
+export const quickSort = (arr) => {
     if (arr.length < 2) {
         return arr
     }
