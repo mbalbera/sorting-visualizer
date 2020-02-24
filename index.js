@@ -3,8 +3,7 @@ let number = 10
 const randomizeButton = document.querySelector('#random');
 const startButton = document.querySelector('#start');
 
-const randomizer = () =>{
-    
+const randomizer = () =>{    
     while (array.length <= number){
         let num = Math.random()
         array.push(Math.floor(100 * num))
