@@ -3,3 +3,10 @@
     background-color: black;
     font-size: medium;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    color: black;
+}
