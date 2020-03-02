@@ -66,11 +66,11 @@ export const quickSort = (arr) => {
     const less = []
     const more = []
     arr.forEach(ele => {
-        if (ele > pvt) { 
+        if (ele > pvt) { //compare everything to pivot point
             more.push(ele)
         } else {
             less.push(ele)
         }
     })
-    return quick(left).concat(pvt, quick(right))
+    return quick(left).concat(pvt, quick(right)) //recursively sort shrunken arrays using same pivot point
 }
