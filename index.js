@@ -17,10 +17,10 @@ const randomizer = () =>{
 const bubbleSort = (arr) => {
     let swapped = true
     while (swapped) {
-        swapped = false
+        swapped = false //when no swaps occur swapped is false and the array is sorted
         for (let i = 0; i < arr.length; i++) {
             if (arr[i] > arr[i + 1]) {
-                let temp = arr[i];
+                let temp = arr[i]; //swaps 2 values in array
                 arr[i] = arr[i + 1];
                 arr[i + 1] = temp;
                 swapped = true;
@@ -66,7 +66,7 @@ export const quickSort = (arr) => {
     const less = []
     const more = []
     arr.forEach(ele => {
-        if (ele > pvt) {
+        if (ele > pvt) { 
             more.push(ele)
         } else {
             less.push(ele)
