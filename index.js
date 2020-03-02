@@ -48,13 +48,13 @@ const merge = (lt, rt) => {
 }
 
 const mergeSort = (arr) => {
-    if (arr.length <= 1) {
+    if (arr.length <= 1) { //base case
         return arr
     }
-    const mid = Math.floor(arr.length / 2)
+    const mid = Math.floor(arr.length / 2) //cuts array in half
     const left = arr.slice(0, mid)
     const right = arr.slice(mid)
-    return merge(mergeSort(left), mergeSort(right))
+    return merge(mergeSort(left), mergeSort(right)) //recursively calls merge to sort the split arrays
 }
 
 //quick sort
