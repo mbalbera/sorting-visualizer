@@ -2,8 +2,8 @@ let array = []
 let number = 10
 const randomizeButton = document.querySelector('#random');
 const startButton = document.querySelector('#start');
-const mainContainer = document.querySelector('#start');
-const actionContainer = document.querySelector('#start');
+const mainContainer = document.querySelector('#mainContainer');
+const actionContainer = document.querySelector('#actionContainer');
 
 const randomizer = () =>{    
     while (array.length <= number){
